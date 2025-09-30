@@ -67,6 +67,9 @@ section#ficha{
   border-radius: 8px;
   grid-column: 2;
 }
+h2{
+  color: var(--destaque);
+}
 img{
   width: 200px;
   aspect-ratio: 1/1;
@@ -98,4 +101,13 @@ section#ficha h1{
 }
 #social a:hover{
   color: var(--destaque-inverso);
+}
+section#detalhes{
+  grid-column: 2;
+}
+article{
+  background-color: var(--fundo-card);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
 }
