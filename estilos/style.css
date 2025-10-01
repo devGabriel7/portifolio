@@ -186,7 +186,9 @@ gap: 20px;
 }
 
 @media screen and (min-width: 768px) {
-  #skill-container{
-    grid-template-columns: 1fr;
+  #skill-container {
+    display: grid;                
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;                    
   }
 }
