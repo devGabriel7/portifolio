@@ -209,18 +209,38 @@ gap: 20px;
 
 #projeto-container .foto{
 width: 100%;
-aspect-ratio: 16/9;
+transform: translate(-9px);
+
+aspect-ratio: 28/14;
 object-fit: cover;
 overflow: hidden;
 border-radius: 8px;
 }
+
+footer{
+  background-color: var(--destaque);
+  color: var(--texto-inverso);
+  text-align: center;
+  padding: 15px;
+}
+
+footer a{
+  color: var(--texto-inverso);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+ footer a:hover{
+  color: var(--destaque-inverso);
+ }
 
 @media screen and (min-width: 768px) {
   #skill-container {   
     grid-template-columns: 1fr 1fr; 
   }
 
-  #rojeto-container .projeto{
+  #projeto-container .projeto{
     flex-direction: row-reverse;
      justify-content: space-between;
   }
@@ -229,7 +249,7 @@ border-radius: 8px;
   }
   #projeto-container .foto{
     aspect-ratio: 1/1;
-    max-width: 20%;
-    max-height: 200px;
+    max-width: 50%;
+    max-height: 250px;
   }
 }
